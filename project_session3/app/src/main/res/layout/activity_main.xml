@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="69dp">
+
+    <TextView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Amount" />
+
+        <EditText
+            android:id="@+id/amount_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/amount"
+            android:layout_toEndOf="@+id/amount" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/year"
+        android:layout_width="256dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/amount"
+        android:layout_marginTop="34dp">
+
+        <TextView
+
+            android:layout_width="153dp"
+            android:layout_height="60dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="No of years" />
+
+        <EditText
+            android:id="@+id/year_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/interest"
+        android:layout_width="258dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="253dp">
+
+        <TextView
+            android:layout_width="159dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/amount"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="rate of interest" />
+
+        <EditText
+            android:id="@+id/interest_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="103dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount"
+            android:text="Calculate SI"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Calculate CI"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Result_id"
+        android:layout_width="119dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" />
+
+
+</RelativeLayout>
+
