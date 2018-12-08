@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientInfo">
+
+    <TextView
+        android:id="@+id/first_name"
+        android:layout_width="132dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="61dp"
+        android:text="First Name" />
+
+    <EditText
+        android:id="@+id/edit_first"
+        android:layout_width="132dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/first_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/last_name"
+        android:layout_width="133dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/first_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:text="Last Name" />
+
+    <EditText
+        android:id="@+id/edit_last"
+        android:layout_width="132dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/last_name"
+        android:layout_alignEnd="@+id/last_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp" />
+
+    <TextView
+        android:id="@+id/Diagnostic_id"
+        android:layout_width="117dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="225dp"
+        android:text="Diagnostic" />
+
+    <Spinner
+        android:id="@+id/spinnerD_id"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="228dp" />
+
+    <TextView
+        android:id="@+id/value_id"
+        android:layout_width="112dp"
+        android:layout_height="41dp"
+        android:layout_alignTop="@+id/Diagnostic_id"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="22dp"
+        android:text="Value" />
+
+    <EditText
+        android:id="@+id/edit_value"
+        android:layout_width="132dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/value_id"
+        android:layout_alignEnd="@+id/last_name"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="-12dp"/>
+
+    <TextView
+        android:id="@+id/DOB_id"
+        android:layout_width="123dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="163dp"
+        android:text="Date Of Birth" />
+
+    <Spinner
+        android:id="@+id/spinnerDOB_id"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="135dp" />
+
+    <Button
+        android:id="@+id/save_button_id"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:text="Save" />
+
+
+</RelativeLayout>
