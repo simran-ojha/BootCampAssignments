@@ -22,32 +22,32 @@ public class CustomListView extends Activity {
         setContentView(R.layout.activity_custom_list_view);
 
         ListView listView=(ListView)findViewById(R.id.listview_id);
-        CustomAdapter customAdaoter=new CustomAdapter();
+        CustomAdapter customAdapter=new CustomAdapter();
+        listView.setAdapter(customAdapter);
     }
 
     class CustomAdapter extends BaseAdapter{
 
         @Override
         public int getCount() {
-            return 0;
-        }
-
-        @Override
-        public Object getItem(int position) {
             return IMAGE.length;
         }
 
         @Override
-        public long getItemId(int position) {
+        public Object getItem(int i) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int i) {
             return 0;
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(int i, View convertView, ViewGroup parent) {
             convertView = getLayoutInflater().inflate(R.layout.customlayput2,null);
             ImageView imageView = (ImageView)convertView.findViewById(R.id.imageview_id);
             TextView textView = (TextView)convertView.findViewById(R.id.textview_id);
-            int i = 0;
             imageView.setImageResource(IMAGE[i]);
             textView.setText(NAME[i]);
             return convertView;
