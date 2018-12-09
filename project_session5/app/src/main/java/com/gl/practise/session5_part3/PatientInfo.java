@@ -1,18 +1,23 @@
 package com.gl.practise.session5_part3;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 
 public class PatientInfo extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
 
     private EditText first1, last1, value;
+    private Button button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +34,15 @@ public class PatientInfo extends AppCompatActivity implements AdapterView.OnItem
         String[] arraySpinner = new String[]{
                 "Cold", "Fever", "Bodyache", "headache", "other"
         };
-        Spinner s = (Spinner) findViewById(R.id.spinnerD_id);
+
+        button1 = (Button)findViewById(R.id.save_button_id);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PatientInfo.this, CustomListView.class));
+            }
+        });
+            Spinner s = (Spinner) findViewById(R.id.spinnerD_id);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, arraySpinner);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
