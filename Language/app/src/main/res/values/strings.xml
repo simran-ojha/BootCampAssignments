@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Language</string>
+    <string name="Amount">Amount</string>
+    <string name="No_of_years">No. of years</string>
+    <string name="rate_of_interest">Rate of Interest</string>
+    <string name="Calculate_SI">Calculate Simple Interest</string>
+    <string name="Calculate_CI">Calculate Compound Interest</string>
+</resources>

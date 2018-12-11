@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Language</string>
+    <string name="Amount">रकम</string>
+    <string name="No_of_years">वर्षों की संख्या</string>
+    <string name="rate_of_interest">ब्याज की दर</string>
+    <string name="Calculate_SI">सरल ब्याज की गणना करें</string>
+    <string name="Calculate_CI">बयौगिक ब्याज की गणना करें</string>
+
+</resources>
